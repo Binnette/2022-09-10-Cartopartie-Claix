@@ -57,17 +57,17 @@ done
 
 ## Crop images
 ```sh
-magick convert 15a.png -crop 75x40%+600+1500 151a.png
-magick convert 15b.png -crop 75x40%+600+1500 151b.png
+magick convert 15a.png -crop 75x40%+600+1500 +repage 151a.png
+magick convert 15b.png -crop 75x40%+600+1500 +repage 151b.png
 
-magick convert 18a.png -crop 75x40%+200+600 181a.png
-magick convert 18b.png -crop 75x40%+200+600 181b.png
+magick convert 18a.png -crop 75x40%+200+600 +repage 181a.png
+magick convert 18b.png -crop 75x40%+200+600 +repage 181b.png
 
-magick convert 19a.png -crop 75x40%+0+0 191a.png
-magick convert 19b.png -crop 75x40%+0+0 191b.png
+magick convert 19a.png -crop 75x40%+0+0 +repage 191a.png
+magick convert 19b.png -crop 75x40%+0+0 +repage 191b.png
 
-magick convert 19a.png -crop 75x40%+200+600 192a.png
-magick convert 19b.png -crop 75x40%+200+600 192b.png
+magick convert 19a.png -crop 75x40%+200+600 +repage 192a.png
+magick convert 19b.png -crop 75x40%+200+600 +repage 192b.png
 
 for i in 151 181 191 192
 # copy previous for bloc
